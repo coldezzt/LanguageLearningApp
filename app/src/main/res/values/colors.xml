@@ -2,4 +2,13 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FFE3562A</color>
+    <color name="grey400">#FF78746D</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#FFBEBAB3</color>
+    <color name="placeholder">#FF78746D</color>
+    <color name="indicator_inactive_page">#D5D4D4</color>
+    <color name="indicator_active_page">#65AAEA</color>+
+    <color name="dark_gray">#78746D</color>
+    <color name="gray_corner">#BEBAB3</color>
 </resources>

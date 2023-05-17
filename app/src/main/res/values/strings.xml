@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">languageLearning</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_subtitle">Create your account</string>
+    <string name="name">Name</string>
+    <string name="mail">E-mail</string>
+    <string name="password">Password</string>
+    <string name="next">Next</string>
+    <string name="start">Let\'s Start</string>
+    <string name="introduction_first_title">Learn anytime
+        and anywhere</string>
+    <string name="introduction_second_title">Find a course
+        for you</string>
+    <string name="introduction_third_title">Improve your skills</string>
+    <string name="introduction_first_subtitle">Quarantine is the perfect time to spend your day
+        learning something new, from anywhere!</string>
+    <string name="introduction_second_subtitle">Quarantine is the perfect time to spend your day
+        learning something new, from anywhere!</string>
+    <string name="introduction_third_subtitle">Quarantine is the perfect time to spend your day
+        learning something new, from anywhere!</string>
+
 </resources>
