@@ -15,14 +15,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://react-midterm.kreosoft.space/api/")
+            .baseUrl("https://api.dictionaryapi.dev/api/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
 
-        val service = retrofit.create(CinemaAPI::class.java)
+        val service = retrofit.create(DictionaryAPI::class.java)
 
         GlobalScope.launch(Dispatchers.IO) {
-            val response = service.getMovies(1)
+            val response = service.getDifinitions("cooking")
             Log.d("MainActivity", response.toString())
         }
     }
