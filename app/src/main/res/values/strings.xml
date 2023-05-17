@@ -19,5 +19,17 @@
         learning something new, from anywhere!</string>
     <string name="introduction_third_subtitle">Quarantine is the perfect time to spend your day
         learning something new, from anywhere!</string>
+    <string name="training_fragment_title">There are 25 words in your Dictionary.
 
+Start the Training?</string>
+    <string name="training_start">Start</string>
+    <string name="training_counter">1 of 10</string>
+    <string name="training_definition">The practice or skill of preparing food by combining, mixing, and heating ingredients.</string>
+    <string name="first_answer">Cooking</string>
+    <string name="second_answer">Smiling</string>
+    <string name="third_answer">Freezing</string>
+    <string name="training_finished_title">Training is finished</string>
+    <string name="training_finished_correct">Correct: 9</string>
+    <string name="training_finished_incorrect">Incorrect: 1</string>
+    <string name="training_again">Again</string>
 </resources>

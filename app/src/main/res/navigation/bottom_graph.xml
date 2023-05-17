@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_graph"
+    app:startDestination="@id/dictionaryFragment">
+
+    <fragment
+        android:id="@+id/dictionaryFragment"
+        android:name="com.example.myapplication.DictionaryFragment"
+        android:label="fragment_dictionary"
+        tools:layout="@layout/fragment_dictionary" />
+
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.myapplication.TrainingFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+
+    <fragment
+        android:id="@+id/trainingFragment"
+        android:name="com.example.myapplication.TrainingFragment"
+        android:label="fragment_training"
+        tools:layout="@layout/fragment_training" />
+
+</navigation>
