@@ -1,4 +1,3 @@
 package com.example.myapplication
 
-class Movie {
-}
+data class Movie(val id: String, val name: String, val year: Int, val country: String)

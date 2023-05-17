@@ -1,3 +1,5 @@
 package com.example.myapplication
 
-data class MoviesResponse()
+data class MoviesResponse(val movies: List<Movie>) {
+
+}
