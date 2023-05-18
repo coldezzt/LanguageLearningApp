@@ -21,7 +21,7 @@
             android:name=".TestActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".IntroductionActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"
@@ -30,7 +30,7 @@
             android:name=".DictionaryActivity"
             android:exported="false" />
         <activity
-            android:name=".IntroductionActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

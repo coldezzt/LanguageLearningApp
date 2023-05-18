@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/dictionaryFragment"
+        android:icon="@drawable/dictionary_icon"
+        android:title="@string/dictionary" />
+
+    <item
+        android:id="@+id/trainingFragment"
+        android:icon="@drawable/training_icon"
+        android:title="@string/training" />
+
+    <item
+        android:id="@+id/videoFragment"
+        android:icon="@drawable/video_icon"
+        android:title="@string/video" />
+
+</menu>

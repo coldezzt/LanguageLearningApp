@@ -12,13 +12,13 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bottom_shape"
         app:itemActiveIndicatorStyle="@null"
-        app:itemIconTint="@color/bottom_colors"
-        app:itemTextColor="@color/bottom_colors"
+        app:itemIconTint="@drawable/bottom_colors"
+        app:itemTextColor="@drawable/bottom_colors"
         app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/main_menu" />
+        app:menu="@menu/bottom_menu" />
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainer"

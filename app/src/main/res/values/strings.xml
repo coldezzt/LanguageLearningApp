@@ -6,6 +6,16 @@
     <string name="name">Name</string>
     <string name="mail">E-mail</string>
     <string name="password">Password</string>
+    <string name="dictionary">Dictionary</string>
+    <string name="training">Training</string>
+    <string name="video">Video</string>
+
+    <string name="word">Word</string>
+    <string name="word_transcription">[ˈkʊkɪŋ]</string>
+    <string name="part_of_speech">Part of Speech:</string>
+    <string name="word_part_of_speech">Noun</string>
+    <string name="word_meanings">Meanings:</string>
+
     <string name="next">Next</string>
     <string name="start">Let\'s Start</string>
     <string name="introduction_first_title">Learn anytime
@@ -22,6 +32,7 @@
     <string name="training_fragment_title">There are 25 words in your Dictionary.
 
 Start the Training?</string>
+
     <string name="training_start">Start</string>
     <string name="training_counter">1 of 10</string>
     <string name="training_definition">The practice or skill of preparing food by combining, mixing, and heating ingredients.</string>
