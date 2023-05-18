@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/videoFragment"
-        android:name="com.example.myapplication.TrainingFragment"
+        android:name="com.example.myapplication.VideoFragment"
         android:label="fragment_video"
         tools:layout="@layout/fragment_video" />
 

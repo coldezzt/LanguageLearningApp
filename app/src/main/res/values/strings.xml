@@ -16,6 +16,9 @@
     <string name="word_part_of_speech">Noun</string>
     <string name="word_meanings">Meanings:</string>
 
+    <string name="definition">A single distinct meaningful element of speech or writing, used with others (or sometimes alone) to form a sentence and typically shown with a space on either side when written or printed.</string>
+    <string name="definition_example">Example: I don\'t like the word \‘unofficial\’</string>
+
     <string name="next">Next</string>
     <string name="start">Let\'s Start</string>
     <string name="introduction_first_title">Learn anytime

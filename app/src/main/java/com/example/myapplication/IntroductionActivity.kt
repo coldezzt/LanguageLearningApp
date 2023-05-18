@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -66,21 +67,19 @@ class IntroductionActivity : AppCompatActivity() {
                 super.onPageSelected(position)
                 indicatorView.onPageSelected(position)
                 var btn = findViewById<Button>(R.id.button_next)
-                if (position == 0 || position == 1) {
-                    btn.setText(R.string.next)
-                } else {
-                    btn.setText(R.string.start)
+                when (position) {
+                    0, 1 -> btn.setText(R.string.next)
+                    2 -> btn.setText(R.string.start)
                 }
             }
         })
 
-        var btn = findViewById<Button>(R.id.button_next)
-        btn.setOnClickListener(View.OnClickListener {
-            var pos = viewPager.currentItem
-            if (pos == 0 || pos == 1) {
-                viewPager.setCurrentItem(++pos)
-            } else {
-                setContentView(R.layout.activity_sign_up)
+        findViewById<Button>(R.id.button_next)
+            .setOnClickListener(View.OnClickListener {
+                var position = viewPager.currentItem
+                when (position) {
+                    0, 1 -> viewPager.setCurrentItem(++position)
+                    2 -> startActivity(Intent(this, SignUpActivity::class.java))
             }
         })
     }
