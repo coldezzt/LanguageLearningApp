@@ -10,13 +10,7 @@ class MeaningAdapter(private val word: Word): RecyclerView.Adapter<MeaningAdapte
 
     private val definitions = word.meanings[0].definitions
 
-    class MeaningViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
-        private val textView: TextView = view.findViewById(R.id.meaningText)
-
-        fun onBind(text: String) {
-            textView.text = text
-        }
-    }
+    class MeaningViewHolder(view: View): RecyclerView.ViewHolder(view)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MeaningViewHolder =
         MeaningViewHolder(LayoutInflater.from(parent.context)
@@ -27,7 +21,7 @@ class MeaningAdapter(private val word: Word): RecyclerView.Adapter<MeaningAdapte
     override fun onBindViewHolder(holder: MeaningViewHolder, position: Int) {
         holder.itemView.apply {
             findViewById<TextView>(R.id.definition).text = definitions[position].definition
-            findViewById<TextView>(R.id.definition_example).text = definitions[position].example
+            findViewById<TextView>(R.id.definitionExampleText).text = definitions[position].example
         }
     }
 }

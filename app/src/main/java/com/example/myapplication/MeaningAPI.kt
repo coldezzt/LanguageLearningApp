@@ -5,5 +5,5 @@ import retrofit2.http.Path
 
 interface MeaningAPI {
     @GET("en/{theme}")
-    suspend fun getDefinitions(@Path("theme") theme: String) : Word
+    suspend fun getDefinitions(@Path("theme") theme: String) : List<Word>
 }

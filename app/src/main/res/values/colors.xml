@@ -11,4 +11,5 @@
     <color name="indicator_active_page">#65AAEA</color>+
     <color name="dark_gray">#78746D</color>
     <color name="gray_corner">#BEBAB3</color>
+    <color name="sky_blue">#65AAEA</color>
 </resources>

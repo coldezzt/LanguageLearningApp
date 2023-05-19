@@ -9,24 +9,36 @@
 
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/searchField"
         android:layout_width="0dp"
         android:layout_height="56dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
-        android:padding="16dp"
-        android:ems="10"
-        android:inputType="text"
-        android:hint="@string/word"
         android:background="@drawable/answer_shape"
-
+        android:hint="@string/word"
+        android:inputType="text"
+        android:paddingVertical="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageButton
+        android:id="@+id/searchIcon"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:background="@color/transparent"
+        android:contentDescription="search button"
+        android:src="@drawable/search_icon"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="@id/searchField"
+        app:layout_constraintEnd_toEndOf="@id/searchField"
+        app:layout_constraintTop_toTopOf="@id/searchField" />
+
     <TextView
-        android:id="@+id/word_search"
+        android:id="@+id/wordSearched"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -35,29 +47,31 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/searchField" />
 
     <TextView
-        android:id="@+id/word_transcription"
+        android:id="@+id/wordTranscription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/word_transcription"
         android:textColor="@color/orange"
-        app:layout_constraintBottom_toBottomOf="@id/word_search"
-        app:layout_constraintStart_toEndOf="@id/word_search"
-        app:layout_constraintTop_toTopOf="@+id/word_search" />
+        app:layout_constraintBottom_toBottomOf="@id/wordSearched"
+        app:layout_constraintStart_toEndOf="@id/wordSearched"
+        app:layout_constraintTop_toTopOf="@+id/wordSearched" />
 
     <ImageButton
         android:id="@+id/audio_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
         android:layout_marginStart="16dp"
         android:background="@color/transparent"
+        android:contentDescription="audio button"
         android:src="@drawable/audio_icon"
-        app:layout_constraintBottom_toBottomOf="@id/word_transcription"
-        app:layout_constraintStart_toEndOf="@id/word_transcription"
-        app:layout_constraintTop_toTopOf="@id/word_transcription" />
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@id/wordTranscription"
+        app:layout_constraintStart_toEndOf="@id/wordTranscription"
+        app:layout_constraintTop_toTopOf="@id/wordTranscription" />
 
     <TextView
         android:id="@+id/partOfSpeechTitle"
@@ -69,7 +83,7 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/word_search" />
+        app:layout_constraintTop_toBottomOf="@id/wordSearched" />
 
     <TextView
         android:id="@+id/wordPartOfSpeech"
@@ -96,11 +110,26 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/meaningsRecyclerView"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginHorizontal="16dp"
+        app:layout_constraintBottom_toTopOf="@id/addToDictionary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/meaningsTitle" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addToDictionary"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/add_to_dictionary"
+        android:textSize="16sp"
+        android:backgroundTint="@color/orange"
+        app:cornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
