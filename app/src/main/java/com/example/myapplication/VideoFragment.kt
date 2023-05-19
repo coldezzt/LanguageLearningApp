@@ -23,8 +23,10 @@ class VideoFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_video, container, false)
         val videoPage = view.findViewById<WebView>(R.id.videoView)
+        videoPage.settings.javaScriptEnabled = true
         videoPage.webViewClient = WebViewClient()
-        videoPage.loadUrl("https://google.com/")
+
+        videoPage.loadUrl("https://www.youtube.com/")
         return view
     }
 }
